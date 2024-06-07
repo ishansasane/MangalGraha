@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:mangal_graha/homepage.dart';
 import 'package:mangal_graha/profilepage.dart';
@@ -41,8 +42,10 @@ class _NavigationPageState extends State<NavigationPage> {
           child: AppBar(
             title: Text(
               'MangalGraha',
-              style:
-                  TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+              style: GoogleFonts.poppins(
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+              ),
             ),
             automaticallyImplyLeading: false, // Prevents the back button
             backgroundColor:
